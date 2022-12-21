@@ -4,3 +4,18 @@
 
 @tailwind utilities;
 
+@layer utilities {
+    /* Used For Chrome, Opera and Safari */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+    /* Used For Firefox: */
+    .no-scrollbar {
+    scrollbar-width: none;
+    }
+    /* Used For MS Edge and IE: */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+  }
+}
+
